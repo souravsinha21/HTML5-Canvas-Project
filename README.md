@@ -4,7 +4,5 @@
 
 ## Description
 
-[>]: On a serious Note, just a side project for learning Canvas, JS, Terraform...
-
-### Links
-[>]: https://souravsinha21.github.io/HTML5-Canvas-Project/
+[>]: On a serious note, just a side project for learning Canvas, JS, Terraform...  
+[>]: To View Progress, [Click Here](https://souravsinha21.github.io/HTML5-Canvas-Project)
