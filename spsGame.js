@@ -60,16 +60,21 @@ function animate() {
   scissor2.draw();
   scissor1.moveObject();
   scissor2.moveObject();
-  if (scissor1.position.x == scissor2.position.x) {
-    scissor1.velocity.x = -scissor1.velocity.x;
-    scissor2.velocity.x = -scissor2.velocity.x;
-  }
-  if (scissor1.position.x> innerWidth || scissor1.position.x < 0) {
-    scissor1.velocity.x = -scissor1.velocity.x;
-  }
-  if (scissor2.position.x > innerWidth || scissor2.position.x < 0) {
-    scissor2.velocity.x = -scissor2.velocity.x;
-  }
+
+  var distX = Math.abs(scissor1.position.x - scissor2.position.x-scissor2.width/2);
+  var distY = Math.abs(scissor1.position.y - scissor2.position.y-scissor2.height/2);
+  console.log(distX,distY);
+
+  // if (scissor1.position.x == scissor2.position.x) {
+  //   scissor1.velocity.x = -scissor1.velocity.x;
+  //   scissor2.velocity.x = -scissor2.velocity.x;
+  // }
+  // if (scissor1.position.x> innerWidth || scissor1.position.x < 0) {
+  //   scissor1.velocity.x = -scissor1.velocity.x;
+  // }
+  // if (scissor2.position.x > innerWidth || scissor2.position.x < 0) {
+  //   scissor2.velocity.x = -scissor2.velocity.x;
+  // }
 
   requestAnimationFrame(animate);
 }
