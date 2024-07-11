@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>HTML 5</title>
-    <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sourav Sinha's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            padding: 2rem 0;
+        }
+        h1, h2, h3 {
+            margin: 0 0 1rem 0;
+        }
+        .projects .project {
+            background-color: white;
+            margin: 1rem 0;
+            padding: 1rem;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <img id="scissor" src="pngs/scissor.png" hidden>
-    <canvas id="canvas" style="display: block;"></canvas>
-    <script src="spsGame.js"></script>
+    <header>
+        <h1>Sourav Sinha's Portfolio</h1>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Sourav Sinha, a passionate web developer. I love creating beautiful and functional websites.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of project 2.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at: <a href="mailto:sourav@example.com">sourav@example.com</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sourav Sinha</p>
+    </footer>
 </body>
 </html>
